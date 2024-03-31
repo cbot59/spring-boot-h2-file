@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - include:
+      file: 31-01-changelog.sql
+      relativeToChangelogFile: true
