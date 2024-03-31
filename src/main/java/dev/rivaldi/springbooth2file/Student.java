@@ -1,5 +1,6 @@
 package dev.rivaldi.springbooth2file;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -23,7 +24,8 @@ class Student {
 
     String name;
 
-    Integer age;
+    @Column(columnDefinition = "tinyint")
+    Short age;
 
     @Override
     public boolean equals(Object o) {
